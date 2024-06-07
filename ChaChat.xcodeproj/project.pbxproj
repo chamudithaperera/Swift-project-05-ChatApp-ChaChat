@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D589546818E790EEF60FAC5 /* Pods_ChaChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA02C2C05E0AF9C7322BE16 /* Pods_ChaChat.framework */; };
 		4AB876662C13590700243BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB876652C13590700243BB3 /* AppDelegate.swift */; };
 		4AB876682C13590700243BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB876672C13590700243BB3 /* SceneDelegate.swift */; };
 		4AB8766A2C13590700243BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB876692C13590700243BB3 /* ViewController.swift */; };
 		4AB8766D2C13590700243BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AB8766C2C13590700243BB3 /* Base */; };
 		4AB8766F2C13590900243BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB8766E2C13590900243BB3 /* Assets.xcassets */; };
 		4AB876722C13590900243BB3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4AB876712C13590900243BB3 /* Base */; };
+		4AB8767A2C135C8900243BB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AB876792C135C8900243BB3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B285D5010CEB235F34736E /* Pods-ChaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaChat.debug.xcconfig"; path = "Target Support Files/Pods-ChaChat/Pods-ChaChat.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB876622C13590700243BB3 /* ChaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB876652C13590700243BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AB876672C13590700243BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		4AB8766E2C13590900243BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB876712C13590900243BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB876732C13590900243BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AB876792C135C8900243BB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AA02C2C05E0AF9C7322BE16 /* Pods_ChaChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9812BA8D50DED781D3F33529 /* Pods-ChaChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaChat.release.xcconfig"; path = "Target Support Files/Pods-ChaChat/Pods-ChaChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D589546818E790EEF60FAC5 /* Pods_ChaChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				4AB876642C13590700243BB3 /* ChaChat */,
 				4AB876632C13590700243BB3 /* Products */,
+				AC43C5B9F9181EF700FBA6DE /* Pods */,
+				BFFD1B95066916C44F8E635D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +71,28 @@
 				4AB8766B2C13590700243BB3 /* Main.storyboard */,
 				4AB8766E2C13590900243BB3 /* Assets.xcassets */,
 				4AB876702C13590900243BB3 /* LaunchScreen.storyboard */,
+				4AB876792C135C8900243BB3 /* GoogleService-Info.plist */,
 				4AB876732C13590900243BB3 /* Info.plist */,
 			);
 			path = ChaChat;
+			sourceTree = "<group>";
+		};
+		AC43C5B9F9181EF700FBA6DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00B285D5010CEB235F34736E /* Pods-ChaChat.debug.xcconfig */,
+				9812BA8D50DED781D3F33529 /* Pods-ChaChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFFD1B95066916C44F8E635D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA02C2C05E0AF9C7322BE16 /* Pods_ChaChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB876762C13590900243BB3 /* Build configuration list for PBXNativeTarget "ChaChat" */;
 			buildPhases = (
+				448EFD0FD7C823B0C7D629D1 /* [CP] Check Pods Manifest.lock */,
 				4AB8765E2C13590700243BB3 /* Sources */,
 				4AB8765F2C13590700243BB3 /* Frameworks */,
 				4AB876602C13590700243BB3 /* Resources */,
+				C13C013212745E7B55836F47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB8766F2C13590900243BB3 /* Assets.xcassets in Resources */,
+				4AB8767A2C135C8900243BB3 /* GoogleService-Info.plist in Resources */,
 				4AB876722C13590900243BB3 /* Base in Resources */,
 				4AB8766D2C13590700243BB3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		448EFD0FD7C823B0C7D629D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C13C013212745E7B55836F47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaChat/Pods-ChaChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaChat/Pods-ChaChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaChat/Pods-ChaChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AB8765E2C13590700243BB3 /* Sources */ = {
@@ -287,6 +360,7 @@
 		};
 		4AB876772C13590900243BB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B285D5010CEB235F34736E /* Pods-ChaChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +388,7 @@
 		};
 		4AB876782C13590900243BB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9812BA8D50DED781D3F33529 /* Pods-ChaChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
